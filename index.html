@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/130/130304.png" type="image/x-icon">
     <title>Formulário do leitor</title>
 </head>
 <body>
     <header>
         <h1>Questionário para Leitor</h1>
-        <p>Nos conte um pouco mais sobre suas caracteristicas como devorador de livros. Preencha os campos abaixo com atenção!</p>
+        <p>Nos conte um pouco mais sobre suas caracteristicas como devorador de livros.<br> Preencha os campos abaixo com atenção!</p>
     </header>
 
     <main>
         <form action="" autocomplete="off">
             
             <div class="campo" id="campo-nome">
-                <label for="nome">
-                    Nome: <input type="text" id="nome" placeholder="Digite seu nome" required autofocus>
-                </label>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
             </div>
 
             <div class="campo" id="campo-email">
-                <label for="email">
-                    Email: <input type="email" name="nemail" id="email" placeholder="Digite seu email">
-                </label>
+                <label for="email">Email</label>
+                <input type="email" name="nemail" id="email" placeholder="Digite seu email">
             </div>
 
             <div class="campo" id="campo-genero">
@@ -111,6 +110,10 @@
             <div class="campo" id="campo-historia">
                 <p>Conte um pouco da sua história com os livros:</p>
                 <textarea name="historia" id="texto-historia" placeholder="Insira aqui sua história."></textarea>
+            </div>
+
+            <div class="botao">
+                <input type="submit" value="Enviar">
             </div>
         </form>
     </main>

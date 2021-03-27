@@ -1,12 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'montserrat', sans-serif;
+}
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+
+    font-size: 18px;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    outline: 0;
+
+    margin-bottom: 15px;
+}
+
+.campo p{
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea,
+.campo select{
+    outline: 0;
+}
+
+.campo select{
+    border: 0;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"]{
+    background: none;
+    border: 0;
+    height: 35px;
+
+    border-bottom: 2px solid;
+    border-color: gray;
+    
+}
+
+.campo input[type="text"]:focus,
+.campo input[type="email"]:focus{
+    border-color: blue;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    border: 0;
+}
+
+fieldset legend{
+    font-weight: 800;
 }
 
 #texto-historia{
-    resize: vertical;
+    resize: none;
     width: 100%;
+    height: 150px;
+}
+
+.botao{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.botao input{
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+footer{
+    margin-top: 10px;
 }
