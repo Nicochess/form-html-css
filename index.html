@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" autocomplete="off">
+        <h1>Questionário para Leitor</h1>
+        <p>Nos conte um pouco mais sobre suas caracteristicas como devorador de livros. Preencha os campos abaixo com atenção!</p>
+        <div class="campo" id="campo-nome">
+            <label for="nome">
+                Nome: <input type="text" id="nome" placeholder="Digite seu nome" required autofocus>
+            </label>
+        </div>
+
+        <div class="campo" id="campo-email">
+            <label for="email">
+                Email: <input type="email" name="nemail" id="email" placeholder="Digite seu email">
+            </label>
+        </div>
+
+        <div class="campo" id="campo-genero">
+            <p>Informe seu gênero:</p>
+            <label for="fgenero">
+                <input type="radio" name="genero" id="fgenero" checked> Feminino
+            </label>
+            <label for="mgenero">
+                <input type="radio" name="genero" id="mgenero"> Masculino
+            </label>
+            <label for="ogenero">
+                <input type="radio" name="genero" id="ogenero"> Outro
+            </label>
+        </div>
+
+        <div class="campo" id="campo-tema">
+            <p>Selecione abaixo os gêneros de livro que você mais gosta:</p>
+            <fieldset id="field-narrativo">
+                <legend>Narrativo</legend>
+                <label for="romance">
+                    <input type="checkbox" name="interesses" id="romance"> Romance
+                </label>
+                <label for="fabula">
+                    <input type="checkbox" name="interesses" id="fabula"> Fábula
+                </label>
+                <label for="suspense">
+                    <input type="checkbox" name="interesses" id="suspense"> Suspense
+                </label>
+                <label for="conto">
+                    <input type="checkbox" name="interesses" id="conto"> Conto
+                </label>
+                <label for="fantasia">
+                    <input type="checkbox" name="interesses" id="fantasia"> Fantasia
+                </label>
+                <label for="autoajuda">
+                    <input type="checkbox" name="interesses" id="autoajuda"> Auto-ajuda
+                </label>
+            </fieldset>
+            <fieldset id="field-lirico">
+                <legend>Lírico</legend>
+                <label for="poesia">
+                    <input type="checkbox" name="interesses" id="poesia"> Poesia
+                </label>
+                <label for="ode">
+                    <input type="checkbox" name="interesses" id="ode"> Ode
+                </label>
+                <label for="satira">
+                    <input type="checkbox" name="interesses" id="satira"> Sátira
+                </label>
+                <label for="hino">
+                    <input type="checkbox" name="interesses" id="hino"> Hino
+                </label>
+                <label for="soneto">
+                    <input type="checkbox" name="interesses" id="soneto"> Soneto
+                </label>
+            </fieldset>
+            <fieldset id="field-drama">
+                <legend>Drama</legend>
+                <label for="farsa">
+                    <input type="checkbox" name="interesses" id="farsa"> Farsa
+                </label>
+                <label for="tragedia">
+                    <input type="checkbox" name="interesses" id="tragedia"> Tragédia
+                </label>
+                <label for="elegia">
+                    <input type="checkbox" name="interesses" id="elegia"> Elegia
+                </label>
+            </fieldset>
+        </div>
+
+        <div class="campo" id="campo-livros">
+            <label for="livros">Quantos livros acredita já ter lido até hoje?</label>
+            <select name="nlivros" id="livros">
+                <option value="0e20">Entre 0 e 20</option>
+                <option value="21e40">Entre 21 e 40</option>
+                <option value="41e60">Entre 41 e 60</option>
+                <option value="61e80">Entre 61 e 80</option>
+                <option value="81e100">Entre 81 e 100</option>
+                <option value="mais100">Mais de 100 livros</option>
+            </select>
+        </div>
+
+        <div class="campo" id="campo-historia">
+            <p>Conte um pouco da sua história com os livros:</p>
+            <textarea name="historia" id="texto-historia" placeholder="Insira aqui sua história."></textarea>
+        </div>
+    </form>
+</body>
+</html>
