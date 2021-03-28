@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
 
 *{
     margin: 0;
@@ -27,12 +28,21 @@ body{
 
 header{
     margin: 20px 0 30px 0;
-    text-align: center;
+    text-align: left;
 }
 
 header h1{
     line-height: 2rem;
     margin-bottom: 5px;
+
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+
+    text-transform: uppercase;
+    background: linear-gradient(180deg ,#000000,#919191);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header p{
@@ -133,6 +143,8 @@ fieldset legend{
 footer{
     margin-top: 10px;
     padding: 0 10px;
+
+    text-align: center;
 }
 
 footer a{
