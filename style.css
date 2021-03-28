@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -12,13 +12,31 @@ body{
     flex-direction: column;
     justify-content: center;
 
+    position: relative;
+
     padding: 10px;
 
     font-size: 18px;
+    color: black;
+    background: linear-gradient(#F8CCDC, #ff94bb);
+}
+
+.bg{
+    background-image: url(https://wallpaperaccess.com/full/3133101.jpg);
 }
 
 header{
-    margin-bottom: 30px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+}
+
+header h1{
+    line-height: 2rem;
+    margin-bottom: 5px;
+}
+
+header p{
+    font-style: italic;
 }
 
 .campo{
@@ -26,11 +44,16 @@ header{
     flex-direction: column;
     outline: 0;
 
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.campo label{
+    font-weight: 700;
 }
 
 .campo p{
     margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .campo input,
@@ -43,6 +66,8 @@ header{
     border: 0;
     height: 30px;
     border-radius: 0 0 10px 10px;
+
+    background: #A2DCE7;
 }
 
 .campo input[type="text"],
@@ -58,7 +83,7 @@ header{
 
 .campo input[type="text"]:focus,
 .campo input[type="email"]:focus{
-    border-color: blue;
+    border-color: #A2DCE7;
 }
 
 fieldset{
@@ -69,7 +94,15 @@ fieldset{
 }
 
 fieldset legend{
-    font-weight: 800;
+    font-weight: 600;
+}
+
+#campo-genero label{
+    font-weight: 400;
+}
+
+#campo-tema label{
+    font-weight: 400;
 }
 
 #texto-historia{
@@ -87,12 +120,21 @@ fieldset legend{
     width: 100%;
     padding: 10px;
 
+    color: #f88b25;
+    border: 0;
     border-radius: 5px;
 
     font-size: 16px;
+    font-weight: 700;
 
+    background: #A2DCE7;
 }
 
 footer{
     margin-top: 10px;
+    padding: 0 10px;
+}
+
+footer a{
+    text-decoration: none;
 }
