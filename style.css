@@ -157,8 +157,7 @@ footer a{
         border-left: 1px rgba(128, 128, 128, 0.425) solid;
     }
 
-    .campo select,
-    .campo select option{
+    .campo select{
         height: 40px;
     }
 }
