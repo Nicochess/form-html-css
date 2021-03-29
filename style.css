@@ -76,6 +76,8 @@ header p{
     border-radius: 0 0 10px 10px;
 
     background: #A2DCE7;
+
+    cursor: pointer;
 }
 
 .campo input[type="text"],
@@ -113,6 +115,10 @@ fieldset legend{
     font-weight: 400;
 }
 
+#campo-tema input{
+    cursor: pointer;
+}
+
 #texto-historia{
     resize: none;
     width: 100%;
@@ -136,6 +142,8 @@ fieldset legend{
     font-weight: 700;
 
     background: #A2DCE7;
+
+    cursor: pointer;
 }
 
 footer{
